@@ -3,21 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Sono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
     <title>Today I Learned</title>
   </head>
 
   <body>
-    <header>
-      <img src="logo.png" height="68" width="68" alt="Today I Learned Logo" />
-      <h1>TODAY I LEARNED</h1>
-      <button>Share a Fact</button>
+    <header class="header">
+      <div class="header-container">
+        <div class="identifiers">
+          <img
+            src="logo.png"
+            height="68"
+            width="68"
+            alt="Today I Learned Logo"
+          />
+          <h1>TODAY I LEARNED</h1>
+        </div>
+        <button>Share a Fact</button>
+      </div>
     </header>
 
-    <form>
+    <form class="submission-form">
       <ul>
         <li>
           <input type="text" placeholder="Share a fact with the world" />
-          <span>200</span>
+          <span class="word_counter">200</span>
         </li>
         <li><input type="text" placeholder="Link to Source" /></li>
         <li>
@@ -42,29 +58,49 @@
 
       <section>
         <ul>
-          <li>
-            <p>
-              React is being developed by Meta (formerly facebook)
-              <a href="https://opensource.fb.com/" target="_blank">Source</a>
-              <span>Fact Type</span>
+          <li class="post">
+            <p class="post-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+              nisl maximus, ultrices neque in, rutrum nunc. Fusce volutpat
+              finibus sem, a pulvinar justo dignissim eu. Nunc eu commodo nunc.
+              Vivamus at tincidunt diam. Curabitur accumsan sem et metus
+              lacinia, ac rhoncus libero porta.
             </p>
-            <div>
-              <button>👍 <strong>24</strong></button>
-              <button>😁 <strong>24</strong></button>
-              <button>😡 <strong>24</strong></button>
-            </div>
+            <ul>
+              <li class="source-link">
+                <a href="https://opensource.fb.com/" target="_blank">Source</a>
+              </li>
+              <li class="fact-categories">
+                <span style="background-color: #3b82f6">Fact Type</span>
+              </li>
+              <li class="fact-reacts">
+                <button>👍 <strong>24</strong></button>
+                <button>😁 <strong>24</strong></button>
+                <button>😡 <strong>24</strong></button>
+              </li>
+            </ul>
           </li>
-          <li>
-            <p>
-              React is being developed by Meta (formerly facebook)
-              <a href="https://opensource.fb.com/" target="_blank">Source</a>
-              <span>Fact Type</span>
+          <li class="post">
+            <p class="post-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+              nisl maximus, ultrices neque in, rutrum nunc. Fusce volutpat
+              finibus sem, a pulvinar justo dignissim eu. Nunc eu commodo nunc.
+              Vivamus at tincidunt diam. Curabitur accumsan sem et metus
+              lacinia, ac rhoncus libero porta.
             </p>
-            <div>
-              <button>👍 <strong>24</strong></button>
-              <button>😁 <strong>24</strong></button>
-              <button>😡 <strong>24</strong></button>
-            </div>
+            <ul>
+              <li class="source-link">
+                <a href="https://opensource.fb.com/" target="_blank">Source</a>
+              </li>
+              <li class="fact-categories">
+                <span style="background-color: #3b82f6">Fact Type</span>
+              </li>
+              <li class="fact-reacts">
+                <button>👍 <strong>24</strong></button>
+                <button>😁 <strong>24</strong></button>
+                <button>😡 <strong>24</strong></button>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
