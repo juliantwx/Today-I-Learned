@@ -26,24 +26,35 @@
             />
             <h1>TODAY I LEARNED</h1>
           </div>
-          <button>Share a Fact</button>
+          <button class="btn btn-large">Post a Fact</button>
         </div>
       </header>
 
       <form class="submission-form">
         <ul>
           <li>
-            <input type="text" placeholder="Share a fact with the world" />
-            <span class="word_counter">200</span>
+            <input
+              type="text"
+              placeholder="Share a fact with the world"
+              class="input-content form-input"
+            />
           </li>
-          <li><input type="text" placeholder="Link to Source" /></li>
-          <li>
-            <select>
+          <li class="word-counter form-element">
+            <span>200</span>
+          </li>
+          <li class="submission-confirmation">
+            <input
+              type="text"
+              placeholder="Link to Source"
+              class="input-link form-input"
+            />
+            <select class="select-category form-input">
               <option value="">Choose Category</option>
               <option value="tech">Technology</option>
               <option value="science">Science</option>
               <option value="finance">Finance</option>
             </select>
+            <button class="btn-post btn btn-large">Post</button>
           </li>
         </ul>
       </form>
@@ -51,9 +62,30 @@
       <main class="main">
         <aside>
           <ul>
-            <li><button>All</button></li>
-            <li><button>Fact Type 1</button></li>
-            <li><button>Fact Type 2</button></li>
+            <li>
+              <button
+                class="btn btn-sidemenu-generic"
+                style="margin-bottom: 30px"
+              >
+                All
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-sidemenu-specific"
+                style="background-color: #3b82f6"
+              >
+                Fact Type 1
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-sidemenu-specific"
+                style="background-color: #16a34a"
+              >
+                Fact Type 2
+              </button>
+            </li>
           </ul>
         </aside>
 
@@ -68,14 +100,21 @@
                 lacinia, ac rhoncus libero porta.
               </p>
               <ul>
-                <li class="source-link">
-                  <a href="https://opensource.fb.com/" target="_blank"
+                <li>
+                  <a
+                    href="https://opensource.fb.com/"
+                    target="_blank"
+                    class="source-link"
                     >Source</a
                   >
                 </li>
                 <li class="fact-categories">
                   <div>
-                    <span style="background-color: #3b82f6">Fact Type</span>
+                    <span
+                      class="tag"
+                      style="background-color: #3b82f6; margin-right: 10px"
+                      >Fact Type</span
+                    >
                     <button>👍 <strong>24</strong></button>
                     <button>😁 <strong>24</strong></button>
                     <button>😡 <strong>24</strong></button>
@@ -88,18 +127,25 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
                 nisl maximus, ultrices neque in, rutrum nunc. Fusce volutpat
                 finibus sem, a pulvinar justo dignissim eu. Nunc eu commodo
-                nunc. Vivamus at tincidunt diam. Curabitur accumsan sem et metus
-                lacinia, ac rhoncus libero porta.
+                nunc. Vivamus at tincidunt diam. Curabditur accumsan sem et
+                metus lacinia, ac rhoncus libero porta.
               </p>
               <ul>
-                <li class="source-link">
-                  <a href="https://opensource.fb.com/" target="_blank"
+                <li>
+                  <a
+                    href="https://opensource.fb.com/"
+                    target="_blank"
+                    class="source-link"
                     >Source</a
                   >
                 </li>
                 <li class="fact-categories">
                   <div>
-                    <span style="background-color: #3b82f6">Fact Type</span>
+                    <span
+                      class="tag"
+                      style="background-color: #3b82f6; margin-right: 10px"
+                      >Fact Type</span
+                    >
                     <button>👍 <strong>24</strong></button>
                     <button>😁 <strong>24</strong></button>
                     <button>😡 <strong>24</strong></button>
@@ -107,11 +153,12 @@
                 </li>
               </ul>
             </li>
+            <li>
+              <button class="load-button">Load More Facts</button>
+            </li>
           </ul>
         </section>
       </main>
-
-      <button class="load-button">Load More Facts</button>
     </div>
   </body>
 </html>
