@@ -26,11 +26,11 @@
             />
             <h1>TODAY I LEARNED</h1>
           </div>
-          <button class="btn btn-large">Post a Fact</button>
+          <button class="btn btn-large btn-form">Post a Fact</button>
         </div>
       </header>
 
-      <form class="submission-form">
+      <form class="submission-form hideable">
         <ul>
           <li>
             <input
@@ -61,7 +61,7 @@
 
       <main class="main">
         <aside>
-          <ul>
+          <ul class="category-buttons">
             <li>
               <button
                 class="btn btn-sidemenu-generic"
@@ -70,89 +70,11 @@
                 All
               </button>
             </li>
-            <li>
-              <button
-                class="btn btn-sidemenu-specific"
-                style="background-color: #3b82f6"
-              >
-                Fact Type 1
-              </button>
-            </li>
-            <li>
-              <button
-                class="btn btn-sidemenu-specific"
-                style="background-color: #16a34a"
-              >
-                Fact Type 2
-              </button>
-            </li>
           </ul>
         </aside>
 
         <section>
-          <ul>
-            <li class="post">
-              <p class="post-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
-                nisl maximus, ultrices neque in, rutrum nunc. Fusce volutpat
-                finibus sem, a pulvinar justo dignissim eu. Nunc eu commodo
-                nunc. Vivamus at tincidunt diam. Curabitur accumsan sem et metus
-                lacinia, ac rhoncus libero porta.
-              </p>
-              <ul>
-                <li>
-                  <a
-                    href="https://opensource.fb.com/"
-                    target="_blank"
-                    class="source-link"
-                    >Source</a
-                  >
-                </li>
-                <li class="fact-categories">
-                  <div>
-                    <span
-                      class="tag"
-                      style="background-color: #3b82f6; margin-right: 10px"
-                      >Fact Type</span
-                    >
-                    <button>👍 <strong>24</strong></button>
-                    <button>😁 <strong>24</strong></button>
-                    <button>😡 <strong>24</strong></button>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="post">
-              <p class="post-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
-                nisl maximus, ultrices neque in, rutrum nunc. Fusce volutpat
-                finibus sem, a pulvinar justo dignissim eu. Nunc eu commodo
-                nunc. Vivamus at tincidunt diam. Curabditur accumsan sem et
-                metus lacinia, ac rhoncus libero porta.
-              </p>
-              <ul>
-                <li>
-                  <a
-                    href="https://opensource.fb.com/"
-                    target="_blank"
-                    class="source-link"
-                    >Source</a
-                  >
-                </li>
-                <li class="fact-categories">
-                  <div>
-                    <span
-                      class="tag"
-                      style="background-color: #3b82f6; margin-right: 10px"
-                      >Fact Type</span
-                    >
-                    <button>👍 <strong>24</strong></button>
-                    <button>😁 <strong>24</strong></button>
-                    <button>😡 <strong>24</strong></button>
-                  </div>
-                </li>
-              </ul>
-            </li>
+          <ul class="post-container">
             <li>
               <button class="load-button">Load More Facts</button>
             </li>
@@ -160,5 +82,6 @@
         </section>
       </main>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
