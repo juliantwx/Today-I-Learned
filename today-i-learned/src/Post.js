@@ -21,17 +21,6 @@ function Post({ postObj }) {
             {postObj.category_type}
           </span>
         </li>
-        <li className="rating-container">
-          <button>
-            👍 <strong>{postObj.count_likes}</strong>
-          </button>
-          <button>
-            😁 <strong>{postObj.count_happy}</strong>
-          </button>
-          <button>
-            😡 <strong>{postObj.count_angry}</strong>
-          </button>
-        </li>
       </ul>
     </li>
   );

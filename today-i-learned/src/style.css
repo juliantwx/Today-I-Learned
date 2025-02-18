@@ -36,20 +36,19 @@ span {
 
 ul {
   list-style: none;
+  width: 100%;
+  max-width: 700px;
 }
 
 button {
   cursor: pointer;
 }
 
-.hideable {
-  display: none;
-}
-
 .main {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 10px;
+  height: 60vh;
 }
 
 #root {
@@ -154,6 +153,7 @@ button {
 
 .rating-container button {
   margin-top: 5px;
+  margin-right: 5px;
   border: none;
   background-color: #88758a;
   font-size: 12px;
@@ -206,6 +206,7 @@ button {
   width: 100%;
   background-image: none;
   margin-bottom: 5px;
+  transition: 0.35s;
 }
 
 .btn-sidemenu-specific:hover {
@@ -216,19 +217,16 @@ button {
   list-style: none;
 }
 
-.load-button {
-  display: block;
-  border: none;
-  background-color: transparent;
-  font-family: "Sono", sans-serif;
-  color: #f4eee0;
-  margin: 0 auto;
-  padding: 10px 20px;
-  transition: 0.2s;
+.post-container {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.load-button:hover {
-  color: rgb(255, 189, 56);
+.post-container-msg {
+  font-size: 20px;
 }
 
 @media (max-width: 700px) {
@@ -254,5 +252,6 @@ button {
 
   .main {
     grid-template-columns: 1fr;
+    height: auto;
   }
 }

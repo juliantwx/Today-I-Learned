@@ -1,4 +1,4 @@
-function Header() {
+function Header({ isFormVisible, showForm }) {
   return (
     <header className="header">
       <div className="header-container">
@@ -11,7 +11,14 @@ function Header() {
           />
           <h1>TODAY I LEARNED</h1>
         </div>
-        <button className="btn btn-large btn-form">Post a Fact</button>
+        <button
+          className="btn btn-large btn-form"
+          onClick={() => {
+            showForm(!isFormVisible);
+          }}
+        >
+          {isFormVisible ? "Close" : "Post a Fact"}
+        </button>
       </div>
     </header>
   );
